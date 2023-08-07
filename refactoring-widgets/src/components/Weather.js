@@ -81,6 +81,7 @@ const Weather = () => {
         const pollWeather = async (location) => {
             let url = 'http://api.openweathermap.org/data/2.5/weather?';
             const apiKey = process.env.REACT_APP_WEATHER_API;
+            // const apiKey = null;
 
             const params = {
                 lat: location.coords.latitude,
